@@ -1,0 +1,8 @@
+<h2>Component B</h2>
+
+<!-- <p>Message for B: {{ data?.message }}</p>
+<button (click)="changeDataForC()">Change Data for C</button>
+<app-compc [data]="dataForC"></app-compc> -->
+
+<p>Message: {{ data.message }}</p>
+<app-compc [data]="data" (update)="handleUpdate($event)"></app-compc>

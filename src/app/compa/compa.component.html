@@ -1,0 +1,10 @@
+<h2>Component A</h2>
+
+<!-- <p>{{ data?.message }}</p>
+<button (click)="changeDataForB()">Change Data for B</button>
+
+<app-compb [data]="dataForB"></app-compb> -->
+
+<p>Message: {{ sharedData.message }}</p>
+
+<app-compb [data]="sharedData"></app-compb>
